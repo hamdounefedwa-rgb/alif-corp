@@ -1,0 +1,25 @@
+PHOTO DU FONDATEUR — À DÉPOSER ICI
+====================================
+
+Le site référence la photo du fondateur à cet emplacement :
+
+    assets/images/fondateur.jpg
+
+POUR L'AFFICHER :
+1. Enregistrez la photo professionnelle du fondateur (celle fournie) sous le nom :
+       fondateur.jpg
+   et placez-la dans ce dossier (assets/images/).
+
+2. Tant que le fichier n'existe pas, un visuel de repli élégant (monogramme « A »)
+   s'affiche automatiquement à la place — la page reste donc propre et professionnelle.
+
+RECOMMANDATIONS :
+- Format conseillé : JPG ou WebP, portrait, ratio proche de 4:5.
+- Largeur conseillée : 900 à 1200 px.
+- Poids : idéalement < 250 Ko (compressée) pour la vitesse.
+- Fond : neutre / détouré sur blanc (comme la photo fournie) rend très bien
+  sur le fond vert de la section « fondateur ».
+
+Le texte alternatif (alt) et la légende (nom + rôle) sont déjà en place dans
+les pages a-propos.html et index.html — pensez à renseigner le vrai nom et le
+vrai intitulé du fondateur dans ces deux fichiers (rechercher « Fondateur »).

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Remplacez le domaine ci-dessous par votre domaine réel avant la mise en ligne.
+Sitemap: https://www.alifcorp.fr/sitemap.xml

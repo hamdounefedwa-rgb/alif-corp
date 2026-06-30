@@ -1,338 +1,304 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Campagnes Google Ads pour PME — Génération de leads qualifiés | Alif Corp</title>
-<meta name="description" content="Alif Corp accompagne les PME dans la création, la structuration et l'optimisation de campagnes Google Ads orientées performance : ciblage, annonces, tracking et amélioration continue du coût par lead.">
-<link rel="canonical" href="/services/google-ads">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/logo/favicon-16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/logo/favicon-180.png">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agence Google Ads pour PME — Génération de leads | Alif Corp</title>
+  <meta name="description" content="Alif Corp crée, structure et optimise vos campagnes Google Ads orientées génération de leads qualifiés : stratégie, ciblage, annonces, tracking et amélioration continue du coût par lead.">
+  <link rel="canonical" href="https://www.alifcorp.fr/google-ads.html">
+  <meta name="theme-color" content="#013220">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Agence Google Ads pour PME — Génération de leads | Alif Corp">
+  <meta property="og:description" content="Alif Corp crée, structure et optimise vos campagnes Google Ads orientées génération de leads qualifiés : stratégie, ciblage, annonces, tracking et amélioration continue du coût par lead.">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body data-page="google-ads">
-<a href="#main" class="skip-link">Aller au contenu principal</a>
-
-<header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="brand" aria-label="Alif Corp — Accueil"><img src="assets/logo/wordmark-dark.png" alt="Alif Corp"></a>
-    <nav class="main-nav" aria-label="Navigation principale">
-      <a href="index.html">Accueil</a>
-      <div class="has-dropdown">
-        <button class="dropdown-trigger" aria-expanded="false">Services<svg viewBox="0 0 12 8" fill="none"><path d="M1 1.5 6 6.5 11 1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="dropdown-menu">
-          <a href="google-ads.html" class="active" data-event="nav_services_google_ads">Google Ads<span class="dd-desc">Campagnes orientées génération de leads</span></a>
-          <a href="seo-local.html" data-event="nav_services_seo_local">SEO local<span class="dd-desc">Visibilité locale &amp; Google Business Profile</span></a>
-          <a href="creation-site-vitrine.html" data-event="nav_services_site">Site vitrine<span class="dd-desc">Sites premium orientés conversion</span></a>
-          <a href="tracking-conversions.html" data-event="nav_services_tracking">Tracking &amp; conversions<span class="dd-desc">Mesure fiable de vos performances</span></a>
-        </div>
-      </div>
-      <a href="methode.html">Méthode</a>
-      <a href="ressources.html">Ressources</a>
-      <a href="a-propos.html">À propos</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="header-actions">
-      <a href="contact.html" class="btn btn-primary desktop-only" data-event="cta_demander_devis">Demander un devis</a>
-      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</header>
-
-<nav class="mobile-nav" aria-label="Navigation mobile">
-  <a href="index.html">Accueil</a>
-  <a href="services.html">Services</a>
-  <div class="mobile-sub">
-    <a href="google-ads.html">→ Google Ads</a>
-    <a href="seo-local.html">→ SEO local</a>
-    <a href="creation-site-vitrine.html">→ Site vitrine</a>
-    <a href="tracking-conversions.html">→ Tracking &amp; conversions</a>
-  </div>
-  <a href="methode.html">Méthode</a>
-  <a href="ressources.html">Ressources</a>
-  <a href="a-propos.html">À propos</a>
-  <a href="contact.html">Contact</a>
-  <a href="contact.html" class="btn btn-cream btn-block" data-event="cta_demander_devis">Demander un devis</a>
-</nav>
-
-<main id="main">
-
-  <!-- 1. Hero -->
-  <section class="hero hero-page">
-    <div class="hero-motif" aria-hidden="true">
-      <svg viewBox="0 0 900 700" fill="none" preserveAspectRatio="xMidYMid slice">
-        <g stroke="#A9C1A5" stroke-width="1">
-          <path d="M900 650 C 650 650 500 500 500 300 C 500 150 600 50 750 50" opacity="0.5"/>
-          <path d="M900 550 C 700 550 580 430 580 280 C 580 160 660 80 780 80" opacity="0.4"/>
-        </g>
-        <circle cx="780" cy="80" r="3.5" fill="#BFA76A"/>
-        <g stroke="#F7F7F3" stroke-width="0.6" opacity="0.16"><circle cx="700" cy="350" r="180"/><circle cx="700" cy="350" r="280"/></g>
-      </svg>
-    </div>
-    <div class="hero-inner">
-      <div class="hero-content">
-        <div class="breadcrumb"><a href="index.html">Accueil</a><span>/</span><a href="services.html">Services</a><span>/</span><span>Google Ads</span></div>
-        <span class="eyebrow">Campagnes Google Ads</span>
-        <h1>Des campagnes Google Ads pour générer des <em>leads qualifiés</em>.</h1>
-        <p class="lead">Alif Corp accompagne les PME dans la création, la structuration et l'optimisation de campagnes Google Ads orientées performance : stratégie, ciblage, annonces, tracking, analyse des données et amélioration continue du coût par lead.</p>
-        <div class="btn-group">
-          <a href="contact.html" class="btn btn-cream" data-event="cta_audit_google_ads">Demander un audit Google Ads<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          <a href="contact.html" class="btn btn-ghost-light" data-event="click_parler_projet">Parler de mon projet</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 2. Problème -->
-  <section>
+<body data-page="google_ads">
+  <!-- Google Tag Manager (placeholder GTM-XXXXXXX) -->
+  <a href="#main" class="skip-link">Aller au contenu</a>
+  <header class="site-header">
     <div class="container">
-      <div class="ledger">
-        <div class="ledger-main reveal">
-          <span class="eyebrow">Le constat</span>
-          <h2>Des clics, oui. Mais pas toujours des opportunités commerciales.</h2>
-          <p class="lead">Beaucoup de campagnes Google Ads génèrent du trafic sans générer suffisamment de demandes qualifiées. Le problème vient rarement du budget : il vient souvent du ciblage, de la structure des campagnes ou de l'absence de tracking fiable.</p>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html" class="logo" aria-label="Alif Corp — Accueil">
+          <span class="logo-word"><span class="alif">ALIF</span><span class="corp">Corp.</span></span>
+          <span class="logo-tag">Acquisition digitale</span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="">Accueil</a></li>
+          <li class="nav-item--has-menu">
+            <button class="nav-trigger is-active" aria-haspopup="true" aria-expanded="false">Services
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="dropdown" role="menu">
+              <a href="google-ads.html" role="menuitem" data-event="nav_service_google_ads"><span class="dd-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span><span><span class="dd-titre">Google Ads</span><span class="dd-desc">Campagnes orientées génération de leads</span></span></a>
+              <a href="seo-local.html" role="menuitem" data-event="nav_service_seo_local"><span class="dd-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span><span class="dd-titre">SEO local</span><span class="dd-desc">Google Business Profile &amp; visibilité locale</span></span></a>
+              <a href="creation-site-vitrine.html" role="menuitem" data-event="nav_service_site"><span class="dd-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></span><span><span class="dd-titre">Site vitrine</span><span class="dd-desc">Sites premium orientés conversion</span></span></a>
+              <a href="tracking-conversions.html" role="menuitem" data-event="nav_service_tracking"><span class="dd-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span><span><span class="dd-titre">Tracking &amp; conversions</span><span class="dd-desc">Mesure fiable &amp; optimisation</span></span></a>
+            </div>
+          </li>
+          <li><a href="methode.html" class="" data-event="nav_methode">Méthode</a></li>
+          <li><a href="ressources.html" class="">Ressources</a></li>
+          <li><a href="a-propos.html" class="">À propos</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+          <li class="nav-cta-mobile"><a href="contact.html" class="btn btn--primary" data-event="cta_demander_devis">Demander un devis</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="contact.html" class="btn btn--primary" data-event="cta_demander_devis">Demander un devis</a>
+          <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
         </div>
-        <div class="ledger-aside reveal">
-          <div class="point-list">
-            <div class="point-item"><span class="point-mark"><svg viewBox="0 0 18 18" fill="none"><path d="M4 4l10 10M14 4 4 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><p>Mots-clés trop larges ou peu pertinents</p></div>
-            <div class="point-item"><span class="point-mark"><svg viewBox="0 0 18 18" fill="none"><path d="M4 4l10 10M14 4 4 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><p>Annonces peu différenciantes</p></div>
-            <div class="point-item"><span class="point-mark"><svg viewBox="0 0 18 18" fill="none"><path d="M4 4l10 10M14 4 4 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><p>Pages de destination peu convaincantes</p></div>
-            <div class="point-item"><span class="point-mark"><svg viewBox="0 0 18 18" fill="none"><path d="M4 4l10 10M14 4 4 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><p>Conversions mal ou non suivies</p></div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero hero--page">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span>/</span><a href="services.html">Services</a><span>/</span>Google Ads</nav>
+        <div class="hero-grid">
+          <div class="reveal">
+            <span class="eyebrow">Google Ads</span>
+            <h1>Campagnes Google Ads pour générer des <span class="accent-italic">leads qualifiés</span>.</h1>
+            <p class="hero-sub">Alif Corp accompagne les PME dans la création, la structuration et l'optimisation de campagnes Google Ads orientées performance : stratégie, ciblage, annonces, tracking, analyse des données et amélioration continue du coût par lead.</p>
+            <div class="btn-row">
+              <a href="contact.html" class="btn btn--primary btn--large" data-event="cta_audit_google_ads">Demander un audit Google Ads</a>
+              <a href="contact.html" class="btn btn--secondary btn--large" data-event="cta_parler_projet">Parler de mon projet</a>
+            </div>
+          </div>
+          <div class="hero-visual reveal reveal-d2" aria-hidden="true">
+            <div class="hv-row"><span class="t">Structure de campagne</span><span class="hv-pill">Leads</span></div>
+            <div class="hv-stats">
+              <div class="hv-stat"><div class="n">Search</div><div class="l">Intention forte</div></div>
+              <div class="hv-stat"><div class="n">PMax</div><div class="l">Couverture</div></div>
+              <div class="hv-stat"><div class="n">RMK</div><div class="l">Reciblage</div></div>
+            </div>
+            <div class="hv-chart">
+              <span class="bar" style="height:30%"></span><span class="bar" style="height:46%"></span><span class="bar" style="height:40%"></span><span class="bar" style="height:60%"></span><span class="bar" style="height:55%"></span><span class="bar" style="height:74%"></span><span class="bar" style="height:68%"></span><span class="bar" style="height:88%"></span>
+            </div>
+            <div class="hv-note">Du clic à la demande qualifiée · suivi des conversions</div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 3. Promesse -->
-  <section class="on-signature">
-    <div class="container">
-      <div class="section-head centered reveal">
-        <span class="eyebrow">Notre promesse</span>
-        <h2>L'objectif n'est pas d'obtenir des clics, mais des leads qualifiés.</h2>
-        <p class="lead">Alif Corp structure vos campagnes autour d'un seul indicateur qui compte réellement pour votre activité : le nombre et la qualité des demandes générées, pas le volume de trafic.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. Pour qui -->
-  <section>
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Pour qui ?</span>
-        <h2>Une approche adaptée aux PME et entreprises locales.</h2>
-      </div>
-      <div class="pill-row reveal">
-        <span class="tag-pill">PME</span>
-        <span class="tag-pill">Entreprises locales</span>
-        <span class="tag-pill">Entreprises B2B</span>
-        <span class="tag-pill">Prestataires de services</span>
-        <span class="tag-pill">Artisans</span>
-        <span class="tag-pill">Commerces</span>
-        <span class="tag-pill">Professions libérales</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- 5. Types de campagnes -->
-  <section class="on-cream-warm">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Types de campagnes</span>
-        <h2>Le bon format pour le bon objectif.</h2>
-      </div>
-      <div class="card-grid cols-3 reveal-group">
-        <article class="service-card reveal"><span class="card-num">Search</span><h3>Campagnes Search</h3><p>Annonces textuelles diffusées sur les recherches Google les plus pertinentes pour votre activité.</p></article>
-        <article class="service-card reveal"><span class="card-num">PMax</span><h3>Performance Max</h3><p>Diffusion automatisée sur l'ensemble des inventaires Google pour maximiser les conversions.</p></article>
-        <article class="service-card reveal"><span class="card-num">Shopping</span><h3>Shopping</h3><p>Mise en avant de vos produits directement dans les résultats de recherche Google.</p></article>
-        <article class="service-card reveal"><span class="card-num">Local</span><h3>Campagnes locales</h3><p>Mise en avant de votre établissement auprès des prospects situés dans votre zone de chalandise.</p></article>
-        <article class="service-card reveal"><span class="card-num">Remkt</span><h3>Remarketing</h3><p>Re-sollicitation des visiteurs n'ayant pas encore converti pour maximiser le retour sur investissement.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <!-- 6. Prestations incluses -->
-  <section>
-    <div class="container">
-      <div class="ledger">
-        <div class="ledger-main reveal">
-          <span class="eyebrow">Prestations incluses</span>
-          <h2>Une prise en charge complète de vos campagnes.</h2>
-          <p class="lead">De la structure du compte à l'amélioration continue, chaque aspect de vos campagnes Google Ads est pris en charge.</p>
+    <!-- MESSAGE FORT -->
+    <section class="section--vert section--compacte">
+      <div class="container text-center">
+        <div class="formula" style="border:0;display:inline-block;text-align:center;padding:0">
+          <p style="max-width:24ch;margin-inline:auto">« L'objectif n'est pas d'obtenir des clics, mais des leads qualifiés. »</p>
         </div>
-        <div class="ledger-aside reveal">
-          <div class="numbered-list">
-            <div class="numbered-item"><span class="num">—</span><div><h4>Structure du compte &amp; campagnes</h4></div></div>
-            <div class="numbered-item"><span class="num">—</span><div><h4>Recherche &amp; sélection des mots-clés</h4></div></div>
-            <div class="numbered-item"><span class="num">—</span><div><h4>Rédaction des annonces</h4></div></div>
-            <div class="numbered-item"><span class="num">—</span><div><h4>Paramétrage des conversions</h4></div></div>
-            <div class="numbered-item"><span class="num">—</span><div><h4>Mots-clés à exclure</h4></div></div>
-            <div class="numbered-item"><span class="num">—</span><div><h4>Amélioration continue</h4></div></div>
+      </div>
+    </section>
+
+    <!-- PROBLÈME -->
+    <section class="section section--blanc">
+      <div class="container">
+        <div class="split">
+          <div class="reveal">
+            <span class="eyebrow">Le problème</span>
+            <h2>Beaucoup de campagnes dépensent sans générer de demandes.</h2>
+            <p>Un compte Google Ads mal structuré consomme du budget sur des clics peu pertinents, sans suivi fiable des conversions. Résultat : des dépenses difficiles à justifier et une rentabilité incertaine.</p>
+          </div>
+          <div class="reveal reveal-d2">
+            <ul class="cross-list">
+              <li>Comptes structurés sans logique d'intention</li>
+              <li>Mots-clés trop larges et requêtes non pertinentes</li>
+              <li>Annonces génériques, peu différenciantes</li>
+              <li>Conversions mal configurées ou absentes</li>
+              <li>Budget dispersé, coût par lead non maîtrisé</li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 7. Méthode Google Ads -->
-  <section class="on-dark">
+    <!-- PROMESSE -->
+    <section class="section section--beige">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="eyebrow" style="justify-content:center">La promesse</span>
+          <h2>Des campagnes pensées pour la qualité des demandes.</h2>
+          <p>Nous structurons chaque compte autour d'un objectif clair : attirer des prospects à forte intention et transformer le budget en opportunités commerciales mesurables.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card reveal"><span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span><h3>Intention</h3><p>Cibler les recherches qui traduisent un réel besoin.</p></div>
+          <div class="card reveal reveal-d1"><span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span><h3>Pertinence</h3><p>Relier annonce, mot-clé et page de destination.</p></div>
+          <div class="card reveal reveal-d2"><span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span><h3>Mesure</h3><p>Suivre les conversions pour décider sur des faits.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POUR QUI -->
+    <section class="section section--blanc">
+      <div class="container">
+        <div class="section-header reveal"><span class="eyebrow">Pour qui ?</span><h2>Pensé pour les PME qui veulent des demandes, pas seulement du trafic.</h2></div>
+        <div class="grid grid-4">
+          <div class="feature reveal"><span class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg></span><div><h3>PME &amp; entreprises locales</h3><p>Souhaitant développer leurs demandes entrantes.</p></div></div>
+          <div class="feature reveal reveal-d1"><span class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg></span><div><h3>Prestataires de services</h3><p>Dont la valeur d'un lead justifie une acquisition ciblée.</p></div></div>
+          <div class="feature reveal reveal-d2"><span class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span><div><h3>Entreprises B2B</h3><p>Cherchant des contacts qualifiés et un cycle maîtrisé.</p></div></div>
+          <div class="feature reveal reveal-d3"><span class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/></svg></span><div><h3>Comptes existants</h3><p>À auditer, restructurer et optimiser durablement.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TYPES DE CAMPAGNES -->
+    <section class="section section--sombre">
+      <div class="container">
+        <div class="section-header reveal"><span class="eyebrow">Types de campagnes</span><h2>Le bon format pour le bon objectif.</h2><p>Chaque type de campagne répond à une logique précise. Nous sélectionnons et combinons les formats les plus pertinents pour votre activité.</p></div>
+        <div class="grid grid-5">
+          <div class="step reveal"><span class="step-num">S</span><h3>Search</h3><p>Capter les recherches à forte intention.</p></div>
+          <div class="step reveal reveal-d1"><span class="step-num">P</span><h3>Performance Max</h3><p>Élargir la couverture sur l'ensemble du réseau Google.</p></div>
+          <div class="step reveal reveal-d2"><span class="step-num">SH</span><h3>Shopping</h3><p>Mettre en avant des produits lorsque c'est pertinent.</p></div>
+          <div class="step reveal reveal-d3"><span class="step-num">L</span><h3>Campagnes locales</h3><p>Générer des contacts et visites de proximité.</p></div>
+          <div class="step reveal reveal-d4"><span class="step-num">R</span><h3>Remarketing</h3><p>Recibler les visiteurs déjà intéressés.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESTATIONS INCLUSES -->
+    <section class="section section--blanc">
+      <div class="container">
+        <div class="split">
+          <div class="reveal">
+            <span class="eyebrow">Prestations incluses</span>
+            <h2>Un accompagnement complet, du paramétrage au pilotage.</h2>
+            <p>Chaque mission s'adapte à votre situation, mais repose sur les mêmes fondations de rigueur et de transparence.</p>
+            <div class="btn-row mt-2"><a href="contact.html" class="btn btn--secondary" data-event="cta_audit_google_ads">Demander un audit</a></div>
+          </div>
+          <div class="reveal reveal-d2">
+            <ul class="check-list">
+              <li>Audit et structuration du compte</li>
+              <li>Recherche de mots-clés et requêtes négatives</li>
+              <li>Stratégie d'enchères et gestion du budget</li>
+              <li>Rédaction d'annonces et extensions</li>
+              <li>Configuration des conversions et du suivi</li>
+              <li>Reporting clair et recommandations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÉTHODE GOOGLE ADS -->
+    <section class="section section--beige">
+      <div class="container">
+        <div class="section-header center reveal"><span class="eyebrow" style="justify-content:center">Méthode Google Ads</span><h2>Une démarche en cinq temps.</h2></div>
+        <div class="grid grid-5">
+          <div class="step reveal"><span class="step-num">01</span><h3>Audit</h3><p>État des lieux du compte, du marché et de la concurrence.</p></div>
+          <div class="step reveal reveal-d1"><span class="step-num">02</span><h3>Structuration</h3><p>Architecture des campagnes par intention.</p></div>
+          <div class="step reveal reveal-d2"><span class="step-num">03</span><h3>Lancement</h3><p>Annonces, ciblage et conversions en place.</p></div>
+          <div class="step reveal reveal-d3"><span class="step-num">04</span><h3>Analyse</h3><p>Lecture des données et des requêtes réelles.</p></div>
+          <div class="step reveal reveal-d4"><span class="step-num">05</span><h3>Optimisation</h3><p>Ajustements continus du coût par lead.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOCUS TRACKING + QUALITÉ DES LEADS -->
+    <section class="section section--blanc">
+      <div class="container">
+        <div class="grid grid-2">
+          <div class="card reveal">
+            <span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+            <h3>Focus tracking</h3>
+            <p>Sans suivi fiable des conversions, une campagne avance à l'aveugle. Nous veillons à ce que chaque demande, appel ou formulaire soit correctement mesuré afin d'optimiser sur des données réelles.</p>
+            <a href="tracking-conversions.html" class="link-arrow" data-event="nav_service_tracking">En savoir plus sur le tracking <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+          <div class="card reveal reveal-d1">
+            <span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
+            <h3>Qualité des leads</h3>
+            <p>Générer beaucoup de contacts ne sert à rien s'ils ne correspondent pas à votre cible. Nous travaillons le ciblage, les exclusions et le message pour privilégier la pertinence des demandes plutôt que le volume brut.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPTIMISATION CONTINUE + LIEN SITE -->
+    <section class="section section--beige">
+      <div class="container">
+        <div class="split">
+          <div class="reveal">
+            <span class="eyebrow">Optimisation continue</span>
+            <h2>Une campagne se pilote, elle ne se lance pas une fois pour toutes.</h2>
+            <p>Les performances évoluent avec le marché, la concurrence et les saisons. Le suivi régulier permet d'ajuster les enchères, les mots-clés et les annonces pour maintenir un coût par lead maîtrisé dans la durée.</p>
+          </div>
+          <div class="reveal reveal-d2">
+            <span class="eyebrow">Lien avec le site vitrine</span>
+            <h2>Une campagne vaut ce que vaut sa page de destination.</h2>
+            <p>Le meilleur ciblage ne compense pas une page peu convaincante. C'est pourquoi nous relions vos campagnes à des pages claires et orientées conversion.</p>
+            <a href="creation-site-vitrine.html" class="link-arrow" data-event="nav_service_site">Voir la création de site vitrine <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAS D'USAGE -->
+    <section class="section section--blanc">
+      <div class="container">
+        <div class="section-header center reveal"><span class="eyebrow" style="justify-content:center">Cas d'usage</span><h2>Des situations fréquentes que nous adressons.</h2></div>
+        <div class="grid grid-3">
+          <div class="card reveal"><h3>Lancement</h3><p>Vous démarrez sur Google Ads et souhaitez une base saine, structurée autour de la génération de leads.</p></div>
+          <div class="card reveal reveal-d1"><h3>Restructuration</h3><p>Votre compte existe mais ses performances stagnent : il a besoin d'un audit et d'une remise à plat.</p></div>
+          <div class="card reveal reveal-d2"><h3>Optimisation</h3><p>Vos campagnes fonctionnent, mais vous voulez réduire le coût par lead et améliorer la qualité.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--beige">
+      <div class="container">
+        <div class="section-header center reveal"><span class="eyebrow" style="justify-content:center">Questions fréquentes</span><h2>À propos de Google Ads.</h2></div>
+        <div class="faq reveal">
+          <div class="faq-item"><button class="faq-q">Faut-il un budget minimum ?<span class="faq-icon"></span></button><div class="faq-a"><div class="faq-a-inner">Le budget dépend de votre marché, de la concurrence et de vos objectifs. Nous évaluons ensemble un niveau cohérent permettant de générer des données exploitables, sans engager de dépenses disproportionnées.</div></div></div>
+          <div class="faq-item"><button class="faq-q">Gérez-vous un compte déjà existant ?<span class="faq-icon"></span></button><div class="faq-a"><div class="faq-a-inner">Oui. Nous pouvons auditer votre compte actuel, identifier les points d'amélioration puis le restructurer, tout en conservant l'historique utile.</div></div></div>
+          <div class="faq-item"><button class="faq-q">Au bout de combien de temps voit-on des résultats ?<span class="faq-icon"></span></button><div class="faq-a"><div class="faq-a-inner">Certains effets apparaissent rapidement, mais l'optimisation s'inscrit dans la durée. Les premières semaines servent à collecter des données fiables avant d'affiner les performances.</div></div></div>
+          <div class="faq-item"><button class="faq-q">Le tracking est-il nécessaire ?<span class="faq-icon"></span></button><div class="faq-a"><div class="faq-a-inner">Indispensable. Sans mesure des conversions, il est impossible de savoir ce qui génère réellement des leads, ni d'optimiser correctement le budget.</div></div></div>
+          <div class="faq-item"><button class="faq-q">Proposez-vous un tarif fixe ?<span class="faq-icon"></span></button><div class="faq-a"><div class="faq-a-inner">Chaque accompagnement est établi sur devis, en fonction de la complexité du compte, du marché et du périmètre d'intervention.</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--blanc">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>Faisons le point sur vos campagnes.</h2>
+          <p>Un audit Google Ads permet d'identifier ce qui freine vos performances et les leviers d'amélioration prioritaires.</p>
+          <div class="btn-row center"><a href="contact.html" class="btn btn--gold btn--large" data-event="cta_audit_google_ads">Demander un audit Google Ads</a><a href="contact.html" class="btn btn--light btn--large" data-event="cta_parler_projet">Parler de mon projet</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Méthode Google Ads</span>
-        <h2>De l'audit au pilotage continu.</h2>
-      </div>
-      <div class="timeline reveal">
-        <div class="timeline-item">
-          <div class="timeline-dot">01</div>
-          <div class="timeline-content"><h3>Audit de l'existant</h3><p>Analyse de votre compte actuel ou de votre marché si vous partez de zéro, afin d'identifier les opportunités prioritaires.</p></div>
+      <div class="footer-grid">
+        <div class="footer-col footer-col--about">
+          <a href="index.html" class="logo logo--blanc" aria-label="Alif Corp — Accueil"><span class="logo-word"><span class="alif">ALIF</span><span class="corp">Corp.</span></span><span class="logo-tag">Acquisition digitale</span></a>
+          <p class="footer-about">Alif Corp accompagne les PME dans la structuration de leur acquisition digitale grâce à Google Ads, au SEO local, aux sites vitrines orientés conversion et au tracking des performances.</p>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-dot">02</div>
-          <div class="timeline-content"><h3>Structuration de la stratégie</h3><p>Définition du ciblage, des types de campagnes et des objectifs de conversion adaptés à votre activité.</p></div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot">03</div>
-          <div class="timeline-content"><h3>Déploiement</h3><p>Création des campagnes, des annonces et paramétrage du tracking des conversions.</p></div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot">04</div>
-          <div class="timeline-content"><h3>Mesure &amp; optimisation continue</h3><p>Analyse régulière des performances et ajustements pour améliorer le coût par lead dans la durée.</p></div>
+        <div class="footer-col"><h4>Services</h4><ul><li><a href="google-ads.html">Google Ads</a></li><li><a href="seo-local.html">SEO local</a></li><li><a href="creation-site-vitrine.html">Création de site vitrine</a></li><li><a href="tracking-conversions.html">Tracking &amp; conversions</a></li></ul></div>
+        <div class="footer-col"><h4>Entreprise</h4><ul><li><a href="methode.html">Méthode</a></li><li><a href="ressources.html">Ressources</a></li><li><a href="a-propos.html">À propos</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Légal</h4><ul><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="politique-confidentialite.html">Politique de confidentialité</a></li><li><a href="politique-cookies.html">Politique de cookies</a></li></ul></div>
+        <div class="footer-col footer-col--contact">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:contact@alifcorp.fr" data-event="click_email">contact@alifcorp.fr</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Zone d'intervention : France, Suisse romande et marchés francophones selon les projets.</span></li>
+          </ul>
+          <a href="contact.html" class="btn btn--light mt-2" data-event="cta_demander_devis">Demander un devis</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- 8. Focus tracking -->
-  <section>
-    <div class="container">
-      <div class="ledger">
-        <div class="ledger-main reveal">
-          <span class="eyebrow">Focus tracking</span>
-          <h2>Sans tracking fiable, aucune optimisation n'est réellement possible.</h2>
-          <p class="lead">Avant toute optimisation, Alif Corp s'assure que vos formulaires, appels et demandes de devis sont correctement suivis via Google Tag Manager et les conversions Google Ads.</p>
-          <a href="tracking-conversions.html" class="btn btn-secondary" data-event="click_tracking_link">En savoir plus sur le tracking<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        </div>
-        <div class="ledger-aside reveal">
-          <div class="stat-card"><span class="stat-label">Conversions suivies</span><p>Envoi de formulaire · Appel téléphonique · Clic email · Demande de devis</p></div>
-        </div>
+      <div class="footer-bottom">
+        <span>© <span class="js-year">2026</span> Alif Corp — Tous droits réservés.</span>
+        <span class="fb-links"><a href="mentions-legales.html">Mentions légales</a><a href="politique-confidentialite.html">Confidentialité</a><a href="politique-cookies.html">Cookies</a></span>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <!-- 9. Qualité des leads -->
-  <section class="on-cream-warm">
-    <div class="container">
-      <div class="section-head centered reveal">
-        <span class="eyebrow">Qualité des leads</span>
-        <h2>Tous les leads ne se valent pas.</h2>
-        <p class="lead">Alif Corp affine en continu le ciblage et les exclusions pour limiter les demandes peu qualifiées et concentrer votre budget sur les prospects les plus pertinents pour votre activité.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 10. Optimisation continue -->
-  <section>
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Optimisation continue</span>
-        <h2>Une amélioration pilotée par la donnée.</h2>
-      </div>
-      <div class="diff-list reveal-group">
-        <div class="diff-item reveal"><div class="diff-mark">—</div><h3>Analyse des mots-clés</h3><p>Ajustement régulier des termes de recherche les plus performants et exclusion des moins pertinents.</p></div>
-        <div class="diff-item reveal"><div class="diff-mark">—</div><h3>Tests d'annonces</h3><p>Comparaison de différentes versions d'annonces pour identifier les messages les plus efficaces.</p></div>
-        <div class="diff-item reveal"><div class="diff-mark">—</div><h3>Ajustement des enchères</h3><p>Pilotage des enchères selon les performances réelles de chaque segment d'audience.</p></div>
-        <div class="diff-item reveal"><div class="diff-mark">—</div><h3>Suivi du coût par lead</h3><p>Analyse continue du coût par lead pour orienter le budget vers ce qui fonctionne.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 11. Lien avec site vitrine -->
-  <section class="on-signature">
-    <div class="container">
-      <div class="ledger">
-        <div class="ledger-main reveal">
-          <span class="eyebrow">Lien avec votre site</span>
-          <h2>Une campagne performante a besoin d'une page à la hauteur.</h2>
-          <p class="lead">Le succès d'une campagne Google Ads dépend autant de la page de destination que de l'annonce elle-même. Alif Corp peut créer ou optimiser votre site vitrine en cohérence avec vos campagnes.</p>
-          <a href="creation-site-vitrine.html" class="btn btn-cream" data-event="click_site_vitrine_link">Découvrir la création de site vitrine<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        </div>
-        <div class="ledger-aside"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 12. Cas d'usage -->
-  <section>
-    <div class="container">
-      <div class="section-head centered reveal">
-        <span class="eyebrow">Cas d'usage</span>
-        <h2>Des situations fréquemment rencontrées.</h2>
-      </div>
-      <div class="card-grid cols-3 reveal-group">
-        <article class="service-card reveal"><h3>Lancement de campagnes</h3><p>Vous n'avez jamais utilisé Google Ads et souhaitez démarrer sur des bases solides.</p></article>
-        <article class="service-card reveal"><h3>Reprise d'un compte existant</h3><p>Vos campagnes actuelles génèrent du trafic mais peu de demandes qualifiées.</p></article>
-        <article class="service-card reveal"><h3>Optimisation du coût par lead</h3><p>Vos campagnes fonctionnent mais le coût par lead reste trop élevé par rapport à vos objectifs.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <!-- 13. FAQ -->
-  <section class="on-cream-warm">
-    <div class="container-narrow">
-      <div class="section-head centered reveal">
-        <span class="eyebrow">Questions fréquentes</span>
-        <h2>Vous avez des questions ?</h2>
-      </div>
-      <div class="faq-list reveal">
-        <div class="faq-item"><button class="faq-question"><span>Quel budget minimum pour démarrer une campagne Google Ads ?</span><span class="faq-icon"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>Le budget adapté dépend de votre secteur, de votre zone géographique et de vos objectifs. Ce point est précisé lors de l'échange initial sur votre projet.</p></div></div></div>
-        <div class="faq-item"><button class="faq-question"><span>Gérez-vous le budget publicitaire à ma place ?</span><span class="faq-icon"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>Le budget publicitaire reste géré directement sur votre compte Google Ads. Alif Corp intervient sur la structuration, l'optimisation et le pilotage des campagnes.</p></div></div></div>
-        <div class="faq-item"><button class="faq-question"><span>Combien de temps avant de voir des résultats ?</span><span class="faq-icon"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>Les délais varient selon votre secteur, votre zone et la concurrence sur vos mots-clés. Ce point est abordé dès l'audit initial.</p></div></div></div>
-        <div class="faq-item"><button class="faq-question"><span>Le tracking des conversions est-il obligatoire ?</span><span class="faq-icon"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>Le tracking est fortement recommandé : sans lui, il est impossible de savoir précisément quelles campagnes génèrent réellement des leads.</p></div></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 14. CTA final -->
-  <section>
-    <div class="container">
-      <div class="cta-final reveal">
-        <div class="section-head centered">
-          <h2>Vous souhaitez structurer vos campagnes Google Ads ?</h2>
-          <p class="lead">Décrivez votre activité et vos objectifs, Alif Corp vous propose une approche adaptée à votre marché et votre budget.</p>
-        </div>
-        <div class="btn-group">
-          <a href="contact.html" class="btn btn-primary" data-event="cta_audit_google_ads">Demander un audit Google Ads<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          <a href="contact.html" class="btn btn-secondary" data-event="click_parler_projet">Parler de mon projet</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand"><img src="assets/logo/wordmark-only.png" alt="Alif Corp"><p>Alif Corp accompagne les PME dans la structuration de leur acquisition digitale grâce à Google Ads, au SEO local, aux sites vitrines orientés conversion et au tracking des performances.</p></div>
-      <div class="footer-col"><h4>Services</h4><ul><li><a href="google-ads.html">Google Ads</a></li><li><a href="seo-local.html">SEO local</a></li><li><a href="creation-site-vitrine.html">Création de site vitrine</a></li><li><a href="tracking-conversions.html">Tracking &amp; conversions</a></li></ul></div>
-      <div class="footer-col"><h4>Entreprise</h4><ul><li><a href="methode.html">Méthode</a></li><li><a href="ressources.html">Ressources</a></li><li><a href="a-propos.html">À propos</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div class="footer-col"><h4>Légal</h4><ul><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="politique-confidentialite.html">Politique de confidentialité</a></li><li><a href="politique-cookies.html">Politique de cookies</a></li></ul></div>
-      <div class="footer-col"><h4>Contact</h4><address><a href="mailto:contact@alifcorp.fr" data-event="click_email">contact@alifcorp.fr</a><br>Téléphone à compléter<br><br>Zone d'intervention : France, Suisse romande et marchés francophones selon les projets</address></div>
-    </div>
-    <div class="footer-bottom">
-      <p>© <span class="js-year">2026</span> Alif Corp — Tous droits réservés.</p>
-      <div class="footer-socials">
-        <a href="#" aria-label="Alif Corp sur LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM3.5 8.75h3.4V21H3.5V8.75Zm6.2 0h3.27v1.68h.05c.46-.86 1.57-1.77 3.23-1.77 3.45 0 4.1 2.27 4.1 5.22V21h-3.4v-5.6c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95V21H9.7V8.75Z"/></svg></a>
-        <a href="#" aria-label="Alif Corp sur Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg></a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
