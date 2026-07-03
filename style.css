@@ -1111,3 +1111,56 @@ em { font-style: italic; }
     color: rgba(16, 32, 24, 0.78);
   }
 }
+/* =========================================================
+   FIX MOBILE — RÉAFFICHER L’ICÔNE BURGER
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .burger {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    position: relative;
+    z-index: 1300;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    color: var(--vert-foret, #102018);
+  }
+
+  .burger span,
+  .burger::before,
+  .burger::after {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 999px;
+  }
+
+  .burger span {
+    position: relative;
+  }
+
+  .burger::before,
+  .burger::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .burger::before {
+    top: 14px;
+  }
+
+  .burger::after {
+    bottom: 14px;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
