@@ -986,3 +986,128 @@ em { font-style: italic; }
   .legal-content h2 { font-size: 1.4rem; }
   .founder-tag { left: 0.8rem; right: 0.8rem; bottom: 0.8rem; }
 }
+/* =========================================================
+   FIX MOBILE — MENU EN OVERLAY + HERO NON ÉCRASÉ
+   ========================================================= */
+
+@media (max-width: 900px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body.nav-open {
+    overflow: hidden;
+  }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(250, 249, 245, 0.96);
+    backdrop-filter: blur(14px);
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1200;
+  }
+
+  .nav {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    max-width: 100%;
+    height: calc(100vh - 72px);
+
+    display: block;
+    background: #faf9f5;
+    padding: 24px 20px 32px;
+    overflow-y: auto;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease,
+      visibility 0.25s ease;
+
+    z-index: 1100;
+  }
+
+  .nav.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .nav ul,
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav li,
+  .nav-item {
+    width: 100%;
+    border-bottom: 1px solid rgba(11, 31, 23, 0.08);
+  }
+
+  .nav a,
+  .nav button,
+  .nav-link {
+    width: 100%;
+    padding: 18px 0;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 1.35;
+    color: #102018;
+  }
+
+  .nav-cta,
+  .nav .btn,
+  .nav .btn-primary {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 22px;
+    padding: 15px 18px;
+    border-radius: 10px;
+    background: #005f2f;
+    color: #ffffff;
+    box-shadow: 0 10px 24px rgba(0, 95, 47, 0.18);
+  }
+
+  .dropdown-menu,
+  .submenu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    background: transparent;
+    border: 0;
+    padding: 0 0 8px;
+    margin: 0;
+  }
+
+  .dropdown-menu a,
+  .submenu a {
+    padding: 13px 0 13px 14px;
+    font-size: 15px;
+    color: rgba(16, 32, 24, 0.78);
+  }
+}
