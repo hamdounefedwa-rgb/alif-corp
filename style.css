@@ -522,7 +522,21 @@ em { font-style: italic; }
 }
 .step h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
 .step p { font-size: 0.98rem; }
+/* Correction lisibilité des cartes étapes sur fond sombre */
+.section--sombre .step h3,
+.section--vert .step h3 {
+  color: var(--vert-signature);
+}
 
+.section--sombre .step p,
+.section--vert .step p {
+  color: var(--vert-foret);
+}
+
+.section--sombre .step-num,
+.section--vert .step-num {
+  color: var(--vert-signature);
+}
 /* Liste à puces premium (check) */
 .check-list { display: grid; gap: 0.85rem; }
 .check-list li { display: flex; gap: 0.8rem; align-items: flex-start; color: var(--texte-doux); }
