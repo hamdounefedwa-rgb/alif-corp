@@ -416,6 +416,18 @@ em { font-style: italic; }
 .hero h1 { color: #fff; max-width: 16ch; }
 .hero p { color: rgba(247,247,245,0.85); }
 .hero--accueil { display: grid; }
+/* Correction lisibilité sur les heros sombres */
+.hero .accent-italic {
+  color: var(--champagne);
+}
+
+.hero .eyebrow {
+  color: rgba(247, 247, 245, 0.78);
+}
+
+.hero .eyebrow::before {
+  background: var(--champagne);
+}
 
 .hero-grid {
   display: grid; grid-template-columns: 1.15fr 0.85fr; gap: clamp(2rem, 5vw, 4rem);
