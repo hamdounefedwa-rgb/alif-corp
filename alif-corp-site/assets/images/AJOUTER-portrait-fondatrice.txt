@@ -1,0 +1,8 @@
+Pour afficher le portrait de la fondatrice :
+
+Déposez simplement ici un fichier nommé  fondatrice.jpg
+(portrait professionnel, minimum 800 px de large, JPG ou WebP).
+
+C'est tout : le site l'affiche automatiquement (accueil + page À propos).
+Tant que le fichier est absent, un monogramme élégant « F.H » prend le relais -
+aucun placeholder technique n'est visible pour les visiteurs.
