@@ -1,123 +1,113 @@
-# Site Alif Corp — Acquisition digitale pour PME
+# Site Alif Corp - v2 (refonte)
 
-Site vitrine premium, statique (HTML / CSS / JavaScript), orienté génération de leads.
-Aucune dépendance, aucun build : ouvrez `index.html` dans un navigateur, ou déposez le dossier sur un hébergeur (Netlify, OVH, etc.).
+Site statique premium (HTML / CSS / JavaScript), orienté génération de leads.
+Aucune dépendance, aucun build : le dépôt se déploie tel quel.
+
+## Déploiement (GitHub -> Netlify)
+
+1. Sur [Netlify](https://app.netlify.com) : **Add new site -> Import an existing project -> GitHub**,
+   puis choisissez ce dépôt.
+2. Aucune configuration à saisir : `netlify.toml` définit tout (publication à la racine,
+   redirections via `_redirects`, en-têtes de sécurité et de cache).
+3. Chaque `git push` sur `main` déclenche automatiquement une mise en production.
+4. Activez les notifications **Forms** (Site settings -> Forms) pour recevoir les demandes
+   du formulaire de contact par e-mail.
 
 ---
 
-## 1. Contenu du site
-
-**16 pages** + design system :
+## 1. Pages
 
 | Page | Fichier |
 |------|---------|
 | Accueil | `index.html` |
-| Services | `services.html` |
-| Google Ads | `google-ads.html` |
+| Google Ads (expertise principale) | `google-ads.html` |
 | SEO local & Google Business Profile | `seo-local.html` |
-| Création de site vitrine | `creation-site-vitrine.html` |
-| Tracking & conversions | `tracking-conversions.html` |
-| Méthode | `methode.html` |
-| Portfolio (volontairement vide) | `portfolio.html` |
+| Sites & landing pages | `sites-landing-pages.html` |
+| Tracking & conversions (socle) | `tracking-conversions.html` |
+| Résultats & méthodologie de mesure | `resultats.html` |
 | À propos | `a-propos.html` |
-| Ressources | `ressources.html` |
-| Contact / Demande de devis | `contact.html` |
-| Merci (page de conversion) | `merci.html` |
+| Contact (formulaire 2 étapes) | `contact.html` |
+| Confirmation d'envoi | `merci.html` |
 | 404 | `404.html` |
-| Mentions légales | `mentions-legales.html` |
-| Politique de confidentialité | `politique-confidentialite.html` |
-| Politique de cookies | `politique-cookies.html` |
+| Mentions légales / Confidentialité / Cookies | `mentions-legales.html`, `politique-confidentialite.html`, `politique-cookies.html` |
 
-Fichiers communs : `style.css` (charte + composants), `script.js` (interactions, formulaire, tracking),
-`robots.txt`, `sitemap.xml`, et le dossier `assets/` (`logo/`, `images/`, `icons/`).
+Fichiers communs : `style.css` (design system complet), `script.js` (navigation, révélations,
+FAQ, formulaire 2 étapes, dataLayer), `robots.txt`, `sitemap.xml`, `_redirects` (Netlify),
+`assets/logo/favicon.svg`.
 
----
-
-## 2. À FAIRE avant la mise en ligne (important)
-
-1. **Photo du fondateur** — déposez le fichier `assets/images/fondateur.jpg`.
-   Tant qu'il est absent, un visuel de repli élégant (monogramme « A ») s'affiche.
-   Voir `assets/images/LISEZ-MOI-photo-fondateur.txt`.
-   Pensez à remplacer « Fondateur · Alif Corp » par le vrai nom dans `index.html` et `a-propos.html`.
-
-2. **Coordonnées** — l'email `contact@alifcorp.fr` est utilisé partout (issu de la charte).
-   Vérifiez / remplacez-le, et pour activer le téléphone, décommentez le bloc `<li>` correspondant dans le footer
-   (recherchez `Téléphone (optionnel)`).
-
-3. **Mentions légales** — complétez les champs marqués `à compléter` dans les 3 pages légales
-   (`mentions-legales.html`, `politique-confidentialite.html`, `politique-cookies.html`).
-   Aucune donnée juridique n'a été inventée.
-
-4. **Domaine** — remplacez `https://www.alifcorp.fr` par votre domaine réel dans :
-   `robots.txt`, `sitemap.xml`, et les balises `canonical` / `og:url` de chaque page.
+Anciennes pages (`services`, `methode`, `ressources`, `portfolio`, `creation-site-vitrine`)
+supprimées et redirigées en 301 via `_redirects`.
 
 ---
 
-## 3. Formulaire de contact
+## 2. À faire avant / après la mise en ligne
 
-Par défaut (démo / ouverture locale) : le formulaire est validé en JavaScript puis redirige vers `merci.html`.
-Les données ne sont **pas** encore envoyées à un serveur.
+1. **Portrait de la fondatrice** - déposez simplement `assets/images/fondatrice.jpg` :
+   le site l'affiche automatiquement (accueil + À propos). En attendant, un monogramme
+   élégant « F.H » s'affiche - aucun placeholder visible.
 
-### Activer l'envoi réel des demandes
-Le formulaire est déjà préparé pour **Netlify Forms**. Pour l'activer (déploiement sur Netlify) :
+2. **Études de cas & témoignages** - des gabarits complets sont prêts **en commentaires HTML** :
+   - accueil : sections « Étude de cas » et « Témoignages » ;
+   - `google-ads.html` : section « Étude de cas » ;
+   - `resultats.html` : cartes d'études de cas.
+   Remplacez les valeurs `[entre crochets]` par des données réelles (avec accord écrit du client),
+   puis retirez les commentaires. **Ne publiez jamais de chiffres inventés.**
 
-1. Dans `contact.html`, sur la balise `<form id="form-contact" ...>`, ajoutez les attributs :
-   ```html
-   data-netlify="true" netlify-honeypot="bot-field"
-   ```
-2. C'est tout. Le script détecte l'attribut `data-netlify` et laisse l'envoi natif se faire ;
-   Netlify capture la demande et redirige vers `merci.html` (déjà défini dans `action`).
+3. **Preuves chiffrées de l'accueil** - un bloc commenté dans `index.html`
+   (« PREUVES CHIFFRÉES ») permet d'ajouter nombre de comptes, secteurs, logos clients
+   dès que ces données existent.
 
-Autre option (sans Netlify) : remplacez l'`action` du formulaire par votre endpoint
-(Formspree, Make, API…) ou branchez votre propre script d'envoi dans `script.js`.
+4. **Mentions légales** - complétez forme juridique / SIRET / adresse dans
+   `mentions-legales.html` (emplacement indiqué en commentaire HTML).
+
+5. **Domaine** - le site utilise `https://www.alifcorp.fr` dans les canonicals, le sitemap
+   et robots.txt. Si le domaine final diffère, faites un rechercher-remplacer global.
 
 ---
 
-## 4. Tracking (Google Tag Manager / Analytics)
+## 3. Formulaire de contact (Netlify Forms)
 
-- **Emplacement GTM** : un commentaire `<!-- Google Tag Manager ... -->` est présent en haut du `<body>`
-  de chaque page. Collez-y votre conteneur `GTM-XXXXXXX` (et le `<noscript>` juste après l'ouverture du body si souhaité).
-- **`dataLayer`** est initialisé dans `script.js`. Les événements sont poussés automatiquement.
+Le formulaire (`contact.html`) est **déjà actif pour Netlify** :
+`data-netlify="true"`, honeypot `bot-field`, champ caché `form-name`, redirection vers `merci.html`.
 
-### Événements disponibles (attribut `data-event` + pushes auto)
+- Sur Netlify : les demandes arrivent dans l'onglet **Forms** (pensez à activer les
+  notifications e-mail vers `contact@alifcorp.fr`).
+- En local (`file://`) : le script simule l'envoi et redirige vers `merci.html`.
+- Autre hébergeur : remplacez l'attribut `action` par votre endpoint (Formspree, Make…).
+
+Le formulaire est en **2 étapes** avec barre de progression, validation par champ,
+messages d'erreur accessibles (`aria-describedby`) et focus géré.
+
+---
+
+## 4. Tracking (Google Tag Manager)
+
+- Emplacement GTM : commentaire en haut du `<body>` de chaque page.
+- `dataLayer` initialisé dans `script.js`.
+
 | Événement | Déclencheur |
 |-----------|-------------|
-| `cta_demander_devis` | clic « Demander un devis » |
-| `cta_audit_google_ads` | clic « Demander un audit Google Ads » |
-| `cta_visibilite_locale` / `cta_audit_local` | CTA SEO local |
-| `cta_creer_site` | CTA site vitrine |
-| `cta_mettre_tracking` / `cta_audit_tracking` | CTA tracking |
-| `cta_discuter_strategie` / `cta_parler_projet` / `cta_demander_audit` | autres CTA |
-| `nav_service_*`, `nav_methode` | clics vers les pages services / méthode |
-| `click_email`, `click_phone` | clics email / téléphone |
+| `cta_diagnostic`, `cta_reserver_echange`, `cta_audit_google_ads`, `cta_audit_local`, `cta_audit_tracking`, `cta_projet_site`, `cta_voir_resultats` | clics CTA |
+| `nav_service_*`, `nav_apropos` | navigation interne |
+| `click_email` | clic e-mail |
 | `view_contact` | affichage de la page contact |
-| `form_start_contact` | début de saisie du formulaire |
-| `form_submit_contact` | **conversion principale** (envoi valide) |
-| `form_error_contact` | soumission invalide |
-| `lead_confirme` | affichage de la page `merci.html` |
+| `form_start_contact` / `form_etape_2_contact` | progression du formulaire |
+| `form_submit_contact` | envoi valide |
+| `form_error_contact` | tentative invalide |
+| `lead_confirme` | affichage de `merci.html` - **conversion principale recommandée** |
 
-→ Conversion Google Ads recommandée : déclenchez-la dans GTM sur l'événement `lead_confirme`
-(page `/merci`) ou `form_submit_contact`.
-
----
-
-## 5. URLs propres (optionnel)
-
-Les liens internes utilisent les fichiers `.html` (fonctionne partout, y compris en local).
-Pour des URLs sans `.html` (ex. `/services/google-ads`) sur Netlify, ajoutez un fichier `netlify.toml`
-avec des redirections, ou activez « Pretty URLs ». Ce n'est pas nécessaire au fonctionnement du site.
+⚠️ Avant d'activer GA4 / conversions Google Ads : installer une CMP (bandeau de consentement)
+et mettre à jour `politique-cookies.html`.
 
 ---
 
-## 6. Charte respectée
+## 5. Design system (rappels)
 
-- **Couleurs** : Vert Signature `#004A11`, Vert Forêt `#013220`, Blanc Premium `#F7F7F5`,
-  secondaires (Vert Sauge, Beige Pierre, Champagne) et accent Or Doux `#BFA76A` — définies en variables CSS (`:root`).
-- **Typographies** : Cormorant Garamond (titres) + Manrope (textes), chargées via Google Fonts.
-- **Logo** : reproduit fidèlement en typographie native (non déformé, non recoloré). Favicon : `assets/logo/favicon.svg`.
+- **Couleurs** : vert signature `#004A11` (principal), vert secondaire `#2F7D41`, ivoire `#F5F1E8`,
+  anthracite `#171A18`, accent éditorial brun-rouge `#8A3324` (rare). Variables dans `:root` de `style.css`.
+- **Typos** : Manrope (titres), Inter (texte), Cormorant Garamond italique (logo et accents éditoriaux). Chargées via Google Fonts.
+- **Accessibilité** : WCAG 2.2 AA - navigation clavier, focus visibles, `aria-expanded`,
+  fermeture Échap du menu, `prefers-reduced-motion` respecté, contrastes ≥ 4,5:1.
+- **Astuce test** : ajoutez `?sansanim` à une URL pour désactiver les animations.
 
-Pour ajuster une couleur ou un espacement globalement, modifiez les variables en haut de `style.css`.
-
----
-
-© Alif Corp — Site livré prêt à personnaliser.
+© Alif Corp.

@@ -1,0 +1,11 @@
+# Redirections de la refonte (anciennes pages -> nouvelles)
+/creation-site-vitrine.html   /sites-landing-pages.html   301
+/creation-site-vitrine        /sites-landing-pages.html   301
+/portfolio.html               /resultats.html             301
+/portfolio                    /resultats.html             301
+/services.html                /google-ads.html            301
+/services                     /google-ads.html            301
+/methode.html                 /#methode                   301
+/methode                      /#methode                   301
+/ressources.html              /                           301
+/ressources                   /                           301

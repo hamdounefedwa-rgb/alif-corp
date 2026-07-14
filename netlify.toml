@@ -1,0 +1,16 @@
+# Déploiement Netlify - site statique, aucun build nécessaire
+[build]
+  publish = "."
+
+# En-têtes de sécurité et de cache
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
