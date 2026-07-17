@@ -1823,12 +1823,8 @@ h1 .serif, h2 .serif { color: var(--vert-500); }
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
 .portrait .monogramme {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
+    display: none !important;
 }
 .portrait .monogramme .lettres {
   font-family: var(--police-serif);
